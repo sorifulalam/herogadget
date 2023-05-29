@@ -11,6 +11,7 @@ import Home from './components/Home';
 import ErrorPage from './components/ErrorPage';
 import Shop from './components/Cards/Shop';
 import Cart from './components/Cards/Cart';
+import { ProductAndCarddata } from './loaders/getCard&Productdata';
 
   const router = createBrowserRouter([
     {
@@ -34,6 +35,7 @@ import Cart from './components/Cards/Cart';
         {
           path: "/cart",
           element: <Cart></Cart>,
+          loader:ProductAndCarddata,
         },
        
         
